@@ -6,33 +6,63 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="center-div">
-            <h1 class="title">Nous contacter</h1>
-            <form class="form" action="http://vip.groupehn.com:20003/html/infospost.php" method="post" id="contactForm">
-                <div class="row-field">
-                    <label for="name">Nom :</label>
-                    <input class="field" type="text" id="name" name="lastname">
+        <div class="page">
+            <div class="navbar">
+                <a href="home.html"><li class="fa fa-home"></li></a>
+                <div class="dropdown">
+                    <button class="dropbtn">Menu 
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="about.html">À propos</a>
+                    <a href="events.html">Evénements</a>
+                    <a href="gallery.html">Galerie</a>
+                    <a href="news.html">News</a>
+                    <a href="prestations.html">Prestations</a>
+                    </div>
                 </div>
-                <div class="row-field">
-                    <label for="surname">Prénom :</label>
-                    <input class="field" type="text" id="surname" name="firstname">
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="content">
+                <div class="center-div">
+                    <h1 class="title">Nous contacter</h1>
+                    <form class="form" action="http://vip.groupehn.com:20003/html/infospost.php" method="post" id="contactForm">
+                        <div class="row-field">
+                            <label for="name">Nom :</label>
+                            <input class="field" type="text" id="name" name="lastname">
+                        </div>
+                        <div class="row-field">
+                            <label for="surname">Prénom :</label>
+                            <input class="field" type="text" id="surname" name="firstname">
+                        </div>
+                        <div class="row-field">
+                            <label for="mail">E-mail :</label>
+                            <input class="field" type="email" id="mail" name="email">
+                        </div>
+                        <div class="row-field">
+                            <label for="msg">Message :</label>
+                            <textarea class="field" id="msg" name="request" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="row-field">
+                            <label for="mail">Pays :</label>
+                            <select class="field"  id="contry" name="country">
+                                <option value="">Choisissez un pays</option>
+                                <option value="dog">France</option>
+                                <option value="cat">Allemagne</option>
+                                <option value="hamster">Espagne</option>
+                            </select>
+                        </div>
+                        <div class="btn-marge">
+                            <input class="custom-btn" type="submit" name="submit" value="Envoyer"></button>
+                        </div>
+                    </form>
                 </div>
-                <div class="row-field">
-                    <label for="mail">E-mail :</label>
-                    <input class="field" type="email" id="mail" name="email" placeholder="yourmail.@yahoo.com">
+            </div>
+            <footer>
+                <div class="copyright">
+                    <p>copyright 2022</p>
                 </div>
-                <div class="row-field">
-                    <label for="msg">Message :</label>
-                    <textarea class="field" id="request" name="request" cols="66" rows="10"></textarea>
-                </div>
-                <div class="row-field">
-                    <label for="mail">Pays :</label>
-                    <input class="field" type="text" id="contry">
-                </div>
-                <div class="btn-marge">
-                    <input class="custom-btn" type="submit" name="submit" value="Envoyer"></button>
-                </div>
-            </form>
+            </footer>
         </div>
     </body>
 </html>
