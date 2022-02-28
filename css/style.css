@@ -1,8 +1,8 @@
 @import url('http://fonts.cdnfonts.com/css/luminari');
 
 html, body {
-  height: 100%;
-  min-height: 100%;
+  /*height: 100%;
+  min-height: 100%;*/
   margin: 0px;
 }
 
@@ -248,4 +248,9 @@ p, li {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+.iframe {
+  width: 100vw;
+  height: 90vh;
 }
